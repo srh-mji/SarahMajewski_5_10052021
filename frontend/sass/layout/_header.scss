@@ -1,0 +1,37 @@
+.headerBanniere {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primary;
+
+    img {
+        width: 250px;
+        margin-left: 30px;
+    }
+
+    .headerCart a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+        margin-right:30px;
+
+        i {
+            padding: 10px;
+        }
+    }
+}
+
+.headerNav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-secondary;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+
+    a {
+        color: white;
+    }
+}
