@@ -1,26 +1,49 @@
 // PHONE
-@media screen and (max-width:640px){
+@media screen and (max-width:640px) {
 
     // HEADER 
     .headerBanniere img {
-        width:180px;
+        width: 180px;
     }
+
     .headerCart {
 
         a {
-            margin-right: 20px!important;
+            margin-right: 20px !important;
         }
+
         i {
-        display: none;
-    }}   
-    
+            display: none;
+        }
+    }
+
     // FOOTER
     .footerNav {
-        display: block!important;
+        display: block !important;
 
         .socialNetwork {
             justify-content: flex-start;
         }
     }
-}
 
+    // Index.html
+    main {
+
+        h1,
+        h2 {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+    }
+
+    #cameraList li {
+        width: 250px;
+
+        #cameraImage {
+            width: 250px;
+            height: 165px;
+            object-fit: cover;
+        }
+    }
+
+}
