@@ -12,13 +12,19 @@ async function cameras() {
 
     const cameras = await getCameras();
 
-    for (var camera of cameras) {
+    // Display all cameras
+    for (let camera of cameras) {
 
-        const template = document.getElementById("camera");
+        // Get parent element
 
         cameraList = document.querySelector("cameraList");
+
+        // Get and Clone template
+
+        const template = document.getElementById("camera");
         const clone = document.importNode(template.content, true);
 
+        // Hydrate element clone
 
         clone.getElementById("cameraImage").src = camera.imageUrl;
         clone.getElementById("cameraName").textContent = camera.name;
@@ -26,6 +32,7 @@ async function cameras() {
         clone.getElementById("cameraDescription").textContent = camera.description;
         clone.getElementById("cameraLink").href = "products.html?id=" + camera._id;
 
+        // Display element
         document.getElementById("cameraList").appendChild(clone);
 
     }
