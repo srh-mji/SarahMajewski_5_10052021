@@ -46,4 +46,66 @@
         }
     }
 
+    // Products.html
+    #cameraProduct {
+        figure {
+            display: block;
+            width: 300px;
+            margin: auto;
+            margin-top: 40px;
+
+            figcaption {
+                padding: 10px;
+                padding-bottom: 30px;
+                margin-top: 0px;
+            }
+
+            img {
+                width: 280px;
+                height: 180px;
+            }
+        }
+    }
+
+}
+
+// TABLETTE
+@media screen and (min-width: 641px) and (max-width:900px) {
+
+    // Products.html
+    #cameraProduct {
+        figure {
+            display: block;
+            width: 500px;
+            margin: auto;
+            margin-top: 40px;
+
+            figcaption {
+                padding: 10px;
+                padding-bottom: 30px;
+                margin-top: 0px;
+            }
+
+            img {
+                width: 480px;
+                height: 280px;
+            }
+        }
+    }
+}
+
+// TV
+@media screen and (min-width: 1430px) {
+
+    // Products.html
+
+    #cameraProduct {
+        height: 450px;
+        figure {
+            width: 1390px;
+            margin: auto;
+            margin-top: 40px;
+        }
+    }
+
 }
