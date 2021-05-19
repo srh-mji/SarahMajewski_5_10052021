@@ -67,6 +67,21 @@
         }
     }
 
+    // Order_confirmation.html
+    .orderDiv {
+        width:260px;
+        padding: 30px;
+        margin-top:80px;
+        margin-bottom:80px;
+        
+        h1 {
+            font-size: 26px;
+            text-align: center;
+            margin: 10px;
+            width: 300px;
+        }
+    }
+
 }
 
 // TABLETTE
@@ -90,6 +105,15 @@
                 width: 480px;
                 height: 280px;
             }
+        }
+    }
+
+    // Order_confirmation.html
+    .orderDiv {
+        width:560px;
+        padding: 30px;
+        h1 {
+            width:600px;
         }
     }
 }
