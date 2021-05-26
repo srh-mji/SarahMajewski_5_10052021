@@ -27,7 +27,7 @@
     }
 
     // Index.html
-    main {
+    .mainIndex {
 
         h1,
         h2 {
@@ -82,8 +82,17 @@
         }
     }
 
+    // cart.html
+    .mainCart {
+        h1 {
+            font-size: 25px;
+        }
+    }
+    .cartForm {
+        width: 260px;
+        margin: auto;
+    }
 }
-
 // TABLETTE
 @media screen and (min-width: 641px) and (max-width:900px) {
 
@@ -119,7 +128,7 @@
 }
 
 // TV
-@media screen and (min-width: 1430px) {
+@media screen and (min-width: 1430px) and (max-width:1900px){
 
     // Products.html
 
