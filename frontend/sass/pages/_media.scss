@@ -1,26 +1,144 @@
 // PHONE
-@media screen and (max-width:640px){
+@media screen and (max-width:640px) {
 
     // HEADER 
     .headerBanniere img {
-        width:180px;
+        width: 180px;
     }
+
     .headerCart {
 
         a {
-            margin-right: 20px!important;
+            margin-right: 20px !important;
         }
+
         i {
-        display: none;
-    }}   
-    
+            display: none;
+        }
+    }
+
     // FOOTER
     .footerNav {
-        display: block!important;
+        display: block !important;
 
         .socialNetwork {
             justify-content: flex-start;
         }
     }
+
+    // Index.html
+    .mainIndex {
+
+        h1,
+        h2 {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+    }
+
+    #cameraList li {
+        width: 250px;
+
+        #cameraImage {
+            width: 250px;
+            height: 165px;
+            object-fit: cover;
+        }
+    }
+
+    // Products.html
+    #cameraProduct {
+        figure {
+            display: block;
+            width: 300px;
+            margin: auto;
+            margin-top: 40px;
+
+            figcaption {
+                padding: 10px;
+                padding-bottom: 30px;
+                margin-top: 0px;
+            }
+
+            img {
+                width: 280px;
+                height: 180px;
+            }
+        }
+    }
+
+    // Order_confirmation.html
+    .orderDiv {
+        width:260px;
+        padding: 30px;
+        margin-top:80px;
+        margin-bottom:80px;
+        
+        h1 {
+            font-size: 26px;
+            text-align: center;
+            margin: 10px;
+            width: 300px;
+        }
+    }
+
+    // cart.html
+    .mainCart {
+        h1 {
+            font-size: 25px;
+        }
+    }
+    .cartForm {
+        width: 260px;
+        margin: auto;
+    }
+}
+// TABLETTE
+@media screen and (min-width: 641px) and (max-width:900px) {
+
+    // Products.html
+    #cameraProduct {
+        figure {
+            display: block;
+            width: 500px;
+            margin: auto;
+            margin-top: 40px;
+
+            figcaption {
+                padding: 10px;
+                padding-bottom: 30px;
+                margin-top: 0px;
+            }
+
+            img {
+                width: 480px;
+                height: 280px;
+            }
+        }
+    }
+
+    // Order_confirmation.html
+    .orderDiv {
+        width:560px;
+        padding: 30px;
+        h1 {
+            width:600px;
+        }
+    }
 }
 
+// TV
+@media screen and (min-width: 1430px) and (max-width:1900px){
+
+    // Products.html
+
+    #cameraProduct {
+        height: 450px;
+        figure {
+            width: 1390px;
+            margin: auto;
+            margin-top: 40px;
+        }
+    }
+
+}

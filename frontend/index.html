@@ -24,7 +24,7 @@
 
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <script src="https://kit.fontawesome.com/c7fd93c0ff.js" crossorigin="anonymous"></script>
     <script src="./js/config_api.js" defer></script>
     <script src="./js/index.js" defer></script>
@@ -68,8 +68,29 @@
         </div>
 
     </header>
-    <main>
+    <main class="mainIndex">
+        <h1>Orinoco Camera Vintage</h1>
+        <h2> Nos produits </h2>
 
+        <ul id="cameraList">
+        </ul>
+
+        <template id="camera">
+            <li>
+                <a id="cameraLink" href="">
+                    <figure>
+                        <img id="cameraImage" src="" alt="">
+                        <figcaption>
+                            <div>
+                                <h3 id="cameraName"></h3>
+                                <p id="cameraPrice"></p>
+                            </div>
+                            <p id="cameraDescription"></p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+        </template>
     </main>
     <footer>
         <div class="containerFooter">

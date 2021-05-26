@@ -1,0 +1,25 @@
+.orderDiv {
+    background-color: $color-primary;
+    padding: 50px;
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 120px;
+
+    button {
+        height: 40px;
+        border-radius: 10px;
+        background-color: $color-secondary;
+        color: white;
+        font-weight: 700;
+        width: 150px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
