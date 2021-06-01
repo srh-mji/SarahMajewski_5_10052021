@@ -73,51 +73,53 @@
         <div class="containerCart">
             <div class="cart">
                 <h2>Vos articles dans le panier</h2>
+                <p id="cartEmpty"><strong>Votre panier est vide</strong> </p>
                 <table>
                     <thead>
                         <tr>
                             <th>Produits</th>
-                            <th>Prix</th>
+                            <th>Lentilles</th>
+                            <th id="price">Prix</th>
                         </tr>
                     </thead>
                     <tbody id="cameraListCart">
                         <template id="camera">
                             <tr>
                                 <td id="cameraName"></td>
+                                <td id="cameraLense"></td>
                                 <td id="cameraPrice"></td>
                             </tr>
-
                         </template>
                     </tbody>
                     <tfoot>
                         <tr>
                             <th> Total</th>
-                            <td id="cartTotalPrice"></td>
+                            <td id="cartTotalPrice" colspan="2"></td>
                         </tr>
                     </tfoot>
                 </table>
             </div>
-            <div class="cartForm">
+            <div class="cartForm" id="form">
                 <h2>Passer commande</h2>
                 <form>
                     <div class="form-group">
                         <label for="firstname">
                             Prénom
                         </label>
-                        <input type="text" name="firstname id=" firstname" placeholder="Entrez votre prénom" required />
+                        <input type="text" name="firstname" id="firstname" placeholder="Entrez votre prénom" required />
                     </div>
 
                     <div class="form-group">
                         <label for="lastname">
                             Nom
                         </label>
-                        <input type="text" name="lastname id=" lastname" placeholder="Entrez votre nom" required />
+                        <input type="text" name="lastname" id="lastname" placeholder="Entrez votre nom" required />
                     </div>
                     <div class="form-group">
                         <label for="email">
                             Adresse email
                         </label>
-                        <input type="email" name"email" id="email" placeholder="Entrez une adresse email valide"
+                        <input type="email" name="email" id="email" placeholder="Entrez une adresse email valide"
                             required />
                     </div>
                     <div class="form-group">
@@ -141,9 +143,9 @@
                         <input type="text" name="city" id="city" placeholder="Entrez votre ville" required />
                     </div>
                 </form>
-                <a> <button type="submit">
+                <a> <button type="submit" id="confirmOrder">
                         Procéder au payement
-                    </button>
+                </button>
                 </a>
             </div>
         </div>
