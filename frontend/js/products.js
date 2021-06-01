@@ -91,5 +91,5 @@ async function camera() {
     });
 };
 
-// appel function camera
+// call function camera
 camera();
