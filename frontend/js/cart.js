@@ -49,7 +49,9 @@ function getTotalPrice() {
     // Add price in totalPrice
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
     let totalPrice = totalPriceTable.reduce(reducer, 0);
+    localStorage.setItem("totalOrder", JSON.stringify(totalPrice));
     return totalPrice;
+    
 };
 
 // Display totalPrice
@@ -129,31 +131,32 @@ getTotalPrice();
 function sendForm() {
     // Get input form
     let contact = {
-        lastname: document.getElementById("lastname").value,
-        firstname: document.getElementById("firstname").value,
+        firstName: document.getElementById("firstname").value,
+        lastName: document.getElementById("lastname").value,
+        address: document.getElementById("adress").value,
         city: document.getElementById("city").value,
         email: document.getElementById("email").value,
-        adress: document.getElementById("adress").value,
-        postcode: document.getElementById("postcode").value,
     };
 
 
-    let products = [];
-    if (localStorage.getItem(cart) !== null) {
-        let productTab = JSON.parse(localStorage.getItem(cart));
+    let products = Array();
+    if (localStorage.getItem("cart") !== null) {
+        let productTab = JSON.parse(localStorage.getItem("cart"));
 
         productTab.forEach(product => {
-            products.push(product._id);
+            console.log(product)
+            products.push(product.id);
         });
     }
 
     let contactItems = JSON.stringify({
         contact,
         products
-    })
-
+    });
+    console.log(contactItems)
     confirmOrder(contactItems);
 };
+
 
 
 // SEND fetch method post
@@ -169,6 +172,8 @@ function confirmOrder(contactItems) {
             return response.json();
         })
         .then((json) => {
+            console.log(json);
+            localStorage.setItem("orderId", JSON.stringify(json.orderId));
             window.location.href = "order_confirmation.html";
         })
         .catch((error) => alert("Erreur :" + error))
