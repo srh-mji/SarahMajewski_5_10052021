@@ -24,11 +24,16 @@
         width: 100%;
     }
 
+    #price {
+        min-width: 70px!important;
+    }
+    
     th {
         border: thin solid $color-secondary;
         width: 50%;
         padding: 5px;
         background-color: $color-terciary;
+
     }
 
     td {
